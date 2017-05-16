@@ -6,13 +6,13 @@ the next year.
 Current draw is approximately 2 uA to 5 uA depending on the number of segments active.
 Battery life on one CR2032 cell is about 5 years.
 
-Parts:					1x	10x
-
-U1	Freescale MC9S08LL16CLH		$2.95	$2.77
-LCD	Varionics VI-321-DP-RC-S	$4.40	$3.28
-XTAL	CM51932768DZFT			$1.20	$0.46
-BATT	Panasonic CR-2032L/F1N		$1.10	$1.00
-C1-C6	0.1uF 0603 MLCC
+| Part | Description                | Price (qty 1) | Price (qty 10) |
+|------|----------------------------|---------------|----------------|
+| U1	 | Freescale MC9S08LL16CLH	| $2.95         |	$2.77          |
+| LCD	 | Varionics VI-321-DP-RC-S	| $4.40	    | $3.28          |
+| XTAL | CM51932768DZFT			| $1.20	    | $0.46          |
+| BATT | Panasonic CR-2032L/F1N	| $1.10	    | $1.00          |
+| C1-C6 | 0.1uF 0603 MLCC           |               |                |
 
 Programming is via a TC2030 programming header with a non-standard pinout.  Sorry -
 I only designed this for my own use and went with what I had available.
@@ -28,5 +28,3 @@ counting will resume with the last recorded time if the backup copies are valid.
 
 When the number of days remaining changes, the main loop updates the LCD pins
 and shuts down until the next TOD interrupt.
-
-scott@3xf.com
